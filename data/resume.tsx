@@ -5,7 +5,7 @@ export const DATA = {
   initials: "MG",
   url: "https://portfolio-eight-nu-96.vercel.app/",
   location: "India",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  locationLink: "https://www.google.com/maps/place/pune",
   description:
       "Software Engineer | PHP | Laravel | ReactJS | NextJS | ElectronJS | SQL | AWS at Tech9",
   summary:
