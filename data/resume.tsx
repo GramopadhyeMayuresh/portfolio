@@ -43,7 +43,7 @@ export const DATA = {
       company: "Tech9",
       href: "https://www.tech9.com/",
       title: "Senior Software Engineer",
-      start: "January 2020 2021",
+      start: "January 2020",
       end: "Present"
     },
     {
