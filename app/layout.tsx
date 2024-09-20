@@ -4,7 +4,13 @@ import {TooltipProvider} from "@/components/ui/tooltip";
 import {DATA} from "@/data/resume";
 import type {Metadata} from "next";
 import "./globals.css";
+import { Inter as FontSans } from "next/font/google";
+import { cn } from "@/lib/utils";
 
+const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   title: {
@@ -44,11 +50,16 @@ export default function RootLayout({
 }>) {
   return (
       <html lang="en" suppressHydrationWarning>
-      <body>
+      <body
+          className={cn(
+              "max-w-7xl md:mx-auto",
+              fontSans.variable
+          )}
+      >
       <ThemeProvider attribute="class" defaultTheme="system">
         <TooltipProvider delayDuration={0}>
           {children}
-          <Navbar />
+          <Navbar/>
         </TooltipProvider>
       </ThemeProvider>
       </body>

@@ -1,0 +1,106 @@
+.timelineContainer {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: transparent;
+}
+
+.timelineLine {
+    position: absolute;
+    width: 3px; /* Reduced the width of the line */
+    background-color: #333;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.timelineItem {
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.timelineItem.left {
+    left: -50%; /* Moved slightly left for alignment */
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.timelineItem.right {
+    left: 50%; /* Moved slightly right to create balance */
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.timelineItem .content {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    position: relative;
+    z-index: 2;
+}
+
+.timelineItem h3, .timelineItem h4, .timelineItem span, .timelineItem p {
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Adjusted for dark themes */
+}
+
+.timelineItem h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    background: linear-gradient(to right, #a0e0ff, #818cf8); /* Gradient background */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Make text transparent so the gradient shows */
+}
+
+.timelineItem h4 {
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+.timelineItem span {
+    display: block;
+    margin: 5px 0;
+    color: #aaa;
+}
+
+.timelineItem p {
+    margin-top: 10px;
+    color: #ddd;
+}
+
+.point {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #ffd700; /* Bright color for the point */
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.timelineItem.left .point {
+    right: -8px; /* Adjusted point positioning for larger cards */
+}
+
+.timelineItem.right .point {
+    left: -8px; /* Adjusted point positioning for larger cards */
+}
+
+.timelineItem .connector {
+    position: absolute;
+    width: 3px; /* Slim connector */
+    height: 20px;
+    top: 50%;
+    z-index: 1;
+}
