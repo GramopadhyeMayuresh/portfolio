@@ -7,7 +7,7 @@ export const DATA = {
   location: "India",
   locationLink: "https://www.google.com/maps/place/pune",
   description:
-      "Software Engineer | PHP | Laravel | ReactJS | NextJS | ElectronJS | SQL | AWS at Tech9",
+      "Software Engineer | PHP | Laravel | Golang(GO) | ReactJS | NextJS | ElectronJS | SQL | AWS at Tech9",
   summary:
       "With over 10 years of software development experience, I am a Senior Software Engineer at Tech9, a leading provider of innovative and scalable solutions for clients across various industries. I have a strong expertise in web and cloud technologies, such as PHP, ReactJS, SQL, AWS, Laravel, and Go, and I have completed multiple certifications to enhance my knowledge and proficiency.\n" +
       "\n" +
