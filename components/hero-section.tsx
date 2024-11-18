@@ -30,7 +30,7 @@ const HeroSection = () => {
                             sequence={[
                                 "Fullstack Developer",
                                 1000,
-                                "PHP, Laravel, React, Node.js",
+                                "PHP, Laravel, Golang(GO), React, Node.js",
                                 1000,
                             ]}
                             wrapper="span"
