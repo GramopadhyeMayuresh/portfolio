@@ -11,6 +11,13 @@ import styles from "./css/timeline.module.css"
 
 const BLUR_FADE_DELAY = 0.04;
 
+const DownloadFile = () => {
+    const url = "/CV/Mayuresh_CV.pdf";
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "Resume.pdf";
+    a.click();
+};
 const HeroSection = () => {
     return (
         <section className="w-4/5 justify-center">
@@ -49,10 +56,10 @@ const HeroSection = () => {
                             Hire Me
                         </Link>
                         <Link
-                            href="https://drive.google.com/file/d/1hoRCch4S99boYrlq2B7tzy4jT060aT4K/view?usp=drive_link"
+                            href="#"
                             className="px-1 inline-block py-1 w-full sm:w-fit rounded-full hover:bg-slate-800 mt-3"
                         >
-              <span className="block rounded-full px-5 py-2">
+              <span className="block rounded-full px-5 py-2" onClick={DownloadFile}>
                 Download CV
               </span>
                         </Link>
@@ -115,6 +122,32 @@ const HeroSection = () => {
                     </div>
                 </section>
             </div>
+            {/*<div className={"w-auto pt-3"}>*/}
+            {/*    <section id="projects">*/}
+            {/*        <div className="scroll-mt-28 mb-28">*/}
+            {/*            <BlurFade delay={BLUR_FADE_DELAY * 3}>*/}
+            {/*                <h1 className="mb-4 text-4xl sm:text-5xl lg:text-4xl lg:leading-normal font-extrabold">My projects</h1>*/}
+            {/*            </BlurFade>*/}
+            {/*            <div>*/}
+            {/*                {DATA.projects.map((project, id) => (*/}
+            {/*                    <BlurFade*/}
+            {/*                        key={project.title}*/}
+            {/*                        delay={BLUR_FADE_DELAY * 12 + id * 0.05}*/}
+            {/*                    >*/}
+            {/*                        <ProjectCard*/}
+            {/*                            href={project.link}*/}
+            {/*                            key={project.title}*/}
+            {/*                            title={project.title}*/}
+            {/*                            description={project.description}*/}
+            {/*                            tags={project.tags}*/}
+            {/*                            imageUrl={project.imageUrl}*/}
+            {/*                        />*/}
+            {/*                    </BlurFade>*/}
+            {/*                ))}*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </section>*/}
+            {/*</div>*/}
         </section>
     );
 };
