@@ -61,13 +61,6 @@ export const DATA = {
       end: "October 2016",
     },
     {
-      company: "Xpertrix IT Solutions",
-      href: "#",
-      title: "Freelance Software Engineer",
-      start: "September 2014",
-      end: "August 2015",
-    },
-    {
       company: "DB xento system",
       href: "#",
       title: "Software Engineer",
